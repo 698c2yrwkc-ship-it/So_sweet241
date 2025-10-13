@@ -547,9 +547,18 @@ footer a {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(255, 182, 193, 0.5);
 }
+.contact form {
+  width: 80%;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background: #fff8f8;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 182, 193, 0.5);
+}
 
-.contact-form input,
-.contact-form textarea {
+.contact form input,
+.contact form textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
@@ -557,7 +566,7 @@ footer a {
   border-radius: 5px;
 }
 
-.contact-form button {
+.contact form button {
   background-color: #ffb6c1;
   color: white;
   border: none;
@@ -567,8 +576,8 @@ footer a {
   transition: 0.3s;
 }
 
-.contact-form button:hover {
+.contact form button:hover {
   background-color: #ff9bb0;
 }
-}
+
 
