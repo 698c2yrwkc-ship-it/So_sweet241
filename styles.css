@@ -735,5 +735,30 @@ footer a {
     height: 22px;
   }
 }
+/* --- Correction du logo WhatsApp rond partout --- */
+.whatsapp-logo,
+.whatsapp-link img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;   /* rend l’image parfaitement ronde */
+  object-fit: cover;    /* garde les proportions sans déformation */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+.whatsapp-logo:hover,
+.whatsapp-link img:hover {
+  transform: scale(1.1);
+}
+
+/* Ajustement sur mobile */
+@media screen and (max-width: 768px) {
+  .whatsapp-logo,
+  .whatsapp-link img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;  /* garde la forme ronde sur mobile */
+  }
+}
 
 
