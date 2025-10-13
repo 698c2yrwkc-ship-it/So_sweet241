@@ -77,16 +77,16 @@ nav a:hover, nav a.active {
 
 @keyframes fondGourmand {
     0% {
-        background-image: url('images/crepes-bg.jpg');
+        background-image: url('crepes-bg.jpg');
     }
     33% {
-        background-image: url('images/cookies-bg.jpg');
+        background-image: url('cookies-bg.jpg');
     }
     66% {
-        background-image: url('images/muffins-bg.jpg');
+        background-image: url('muffins-bg.jpg');
     }
     100% {
-        background-image: url('images/crepes-bg.jpg');
+        background-image: url('crepes-bg.jpg');
     }
 }
 
@@ -538,4 +538,5 @@ footer a {
         bottom: 20px;
         right: 20px;
     }
+
 }
