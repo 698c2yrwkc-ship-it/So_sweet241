@@ -629,5 +629,67 @@ footer a {
   color: #ffe3ec;
   transform: scale(1.2);
 }
+/* --- Bouton WhatsApp amélioré --- */
+.whatsapp-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  text-align: center;
+}
+
+.whatsapp-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.whatsapp-link img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+.whatsapp-link img:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-text {
+  color: #25D366;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.chat-bubble {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 8px 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  font-size: 13px;
+  color: #333;
+  position: absolute;
+  bottom: 75px;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* La bulle apparaît au survol sur ordi */
+.whatsapp-container:hover .chat-bubble {
+  opacity: 1;
+}
+
+/* Ajustement sur téléphone */
+@media screen and (max-width: 768px) {
+  .chat-bubble {
+    opacity: 1;
+    position: static;
+    margin-bottom: 5px;
+  }
+}
 
 
