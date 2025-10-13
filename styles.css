@@ -612,5 +612,22 @@ footer a {
 .whatsapp-container {
   z-index: 5;
 }
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffe3ec;
+  transform: scale(1.2);
+}
 
 
