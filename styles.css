@@ -538,5 +538,37 @@ footer a {
         bottom: 20px;
         right: 20px;
     }
-
+.contact-form {
+  width: 80%;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background: #fff8f8;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 182, 193, 0.5);
 }
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #ffb6c1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #ff9bb0;
+}
+}
+
