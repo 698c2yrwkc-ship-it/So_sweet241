@@ -691,5 +691,49 @@ footer a {
     margin-bottom: 5px;
   }
 }
+/* --- Bouton WhatsApp visible sur mobile et ordi --- */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, background-color 0.3s;
+  z-index: 1000;
+}
+
+.whatsapp-button:hover {
+  background-color: #20b85f;
+  transform: scale(1.05);
+}
+
+.whatsapp-logo {
+  width: 25px;
+  height: 25px;
+}
+
+/* --- Adaptation mobile --- */
+@media screen and (max-width: 768px) {
+  .whatsapp-button {
+    bottom: 15px;
+    right: 15px;
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+
+  .whatsapp-logo {
+    width: 22px;
+    height: 22px;
+  }
+}
 
 
