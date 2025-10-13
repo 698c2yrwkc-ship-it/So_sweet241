@@ -580,4 +580,30 @@ footer a {
   background-color: #ff9bb0;
 }
 
+@media screen and (max-width: 768px) {
+  .contact-form {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .contact-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+  }
+
+  .contact-form button {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
 
