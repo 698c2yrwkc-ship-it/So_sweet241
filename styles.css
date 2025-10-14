@@ -346,30 +346,6 @@ footer a {
     max-width: 700px;
 }
 
-.whatsapp-container {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    z-index: 100;
-}
-
-
-.chat-bubble {
-    background-color: #fff;
-    color: #444;
-    padding: 12px 18px;
-    border-radius: 18px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    font-size: 14px;
-    line-height: 1.4;
-    margin-bottom: 8px;
-    opacity: 0;
-    transform: translateY(10px);
-    animation: bubbleIn 2s ease forwards;
-}
 
 
 @keyframes bubbleIn {
@@ -383,22 +359,6 @@ footer a {
     }
 }
 
-
-.whatsapp-btn {
-    background-color: #25D366;
-    color: white;
-    font-size: 28px;
-    padding: 15px 20px;
-    border-radius: 50%;
-    text-decoration: none;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.whatsapp-btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-}
 
 .menu-images {
     display: flex;
@@ -492,10 +452,6 @@ footer a {
     height: auto;
   }
 
-  .whatsapp-container {
-    bottom: 20px;
-    right: 20px;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -534,9 +490,6 @@ footer a {
         text-align: center;
     }
 
-    .whatsapp-container {
-        bottom: 20px;
-        right: 20px;
     }
 .contact-form {
   width: 80%;
@@ -609,9 +562,7 @@ footer a {
   position: relative;
   z-index: 10;
 }
-.whatsapp-container {
-  z-index: 5;
-}
+
 .social-icons {
   display: flex;
   justify-content: center;
@@ -629,40 +580,7 @@ footer a {
   color: #ffe3ec;
   transform: scale(1.2);
 }
-/* --- Bouton WhatsApp amélioré --- */
-.whatsapp-container {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
-  text-align: center;
-}
 
-.whatsapp-link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-}
-
-.whatsapp-link img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  transition: transform 0.3s;
-}
-
-.whatsapp-link img:hover {
-  transform: scale(1.1);
-}
-
-.whatsapp-text {
-  color: #25D366;
-  font-weight: 600;
-  font-size: 14px;
-  margin-top: 5px;
-}
 
 .chat-bubble {
   background-color: #ffffff;
@@ -678,10 +596,6 @@ footer a {
   transition: opacity 0.3s ease;
 }
 
-/* La bulle apparaît au survol sur ordi */
-.whatsapp-container:hover .chat-bubble {
-  opacity: 1;
-}
 
 /* Ajustement sur téléphone */
 @media screen and (max-width: 768px) {
@@ -690,52 +604,7 @@ footer a {
     position: static;
     margin-bottom: 5px;
   }
-}
-/* --- Bouton WhatsApp visible sur mobile et ordi --- */
-.whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25D366;
-  color: white;
-  font-weight: 600;
-  font-size: 15px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 16px;
-  border-radius: 30px;
-  text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s, background-color 0.3s;
-  z-index: 1000;
-}
-
-.whatsapp-button:hover {
-  background-color: #20b85f;
-  transform: scale(1.05);
-}
-
-.whatsapp-logo {
-  width: 25px;
-  height: 25px;
-}
-
-/* --- Adaptation mobile --- */
-@media screen and (max-width: 768px) {
-  .whatsapp-button {
-    bottom: 15px;
-    right: 15px;
-    font-size: 14px;
-    padding: 10px 14px;
-  }
-
-  .whatsapp-logo {
-    width: 22px;
-    height: 22px;
-  }
-
-/* --- Bouton WhatsApp rond, moderne et propre --- */
+/* --- Bouton WhatsApp rond et responsive (version finale) --- */
 .whatsapp-button {
   position: fixed;
   bottom: 20px;
@@ -744,53 +613,40 @@ footer a {
   z-index: 1000;
 }
 
+/* Conteneur rond */
 .whatsapp-circle {
   width: 60px;
   height: 60px;
-  border-radius: 50%;
-  background-color: #25D366;         /* couleur officielle WhatsApp */
+  border-radius: 50%;                /* rond parfait */
+  background-color: #25D366;         /* vert officiel WhatsApp */
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;                  /* masque tout ce qui dépasse */
+  overflow: hidden;                  /* masque l’image si elle dépasse */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s;
-}
-
-/* --- Ajustement du bouton WhatsApp sur ordinateur --- */
-.whatsapp-circle {
-  width: 48px;      /* taille réduite */
-  height: 48px;
-  background-color: #25D366; /* vert WhatsApp */
-  border-radius: 10px; /* légèrement arrondi */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s;
 }
 
 .whatsapp-circle img {
-  width: 65%;
-  height: 65%;
-  object-fit: contain;
+  width: 70%;
+  height: 70%;
+  object-fit: contain;               /* conserve les proportions du logo */
 }
 
+/* Effet au survol (PC uniquement) */
 .whatsapp-circle:hover {
   transform: scale(1.1);
+  background-color: #20b85f;
 }
 
-/* --- Ajustement sur téléphone --- */
+/* --- Ajustement mobile --- */
 @media screen and (max-width: 768px) {
   .whatsapp-circle {
     width: 55px;
     height: 55px;
-    border-radius: 50%; /* rond sur mobile */
   }
 }
-background-color: #43e57d;
-
+ 
 
 
 
