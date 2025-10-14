@@ -757,24 +757,39 @@ footer a {
   transition: transform 0.3s;
 }
 
+/* --- Ajustement du bouton WhatsApp sur ordinateur --- */
+.whatsapp-circle {
+  width: 48px;      /* taille réduite */
+  height: 48px;
+  background-color: #25D366; /* vert WhatsApp */
+  border-radius: 10px; /* légèrement arrondi */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
 .whatsapp-circle img {
-  width: 70%;
-  height: 70%;
-  object-fit: contain;               /* garde le logo bien proportionné */
+  width: 65%;
+  height: 65%;
+  object-fit: contain;
 }
 
 .whatsapp-circle:hover {
   transform: scale(1.1);
-  background-color: #20b85f;         /* léger effet au survol */
 }
 
-/* --- Ajustement mobile --- */
+/* --- Ajustement sur téléphone --- */
 @media screen and (max-width: 768px) {
   .whatsapp-circle {
     width: 55px;
     height: 55px;
+    border-radius: 50%; /* rond sur mobile */
   }
 }
+
 
 
 
