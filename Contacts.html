@@ -44,17 +44,30 @@
         <p>Une commande, une question ou une collaboration ? Envoyez-nous un message, nous vous répondrons rapidement !</p>
         
 <section class="contact-form">
-    <form action="https://formspree.io/f/xqaylnng" method="POST" class="formulaire">
-    <label for="nom">Nom :</label>
-    <input type="text" id="nom" name="nom" required>
+  <form action="commande.php" method="POST" class="formulaire" style="max-width:500px;margin:auto;">
+  <h2>Passer une commande</h2>
 
-    <label for="email">Email :</label>
-    <input type="email" id="email" name="email" required>
+  <label for="nom_client">Nom complet :</label>
+  <input type="text" id="nom_client" name="nom_client" required>
 
-    <label for="message">Message :</label>
-    <textarea id="message" name="message" rows="5" placeholder="Votre message ici..." required></textarea>
+  <label for="telephone">Téléphone :</label>
+  <input type="text" id="telephone" name="telephone" required>
 
-    <button type="submit" class="btn">Envoyer</button>
+  <label for="produit">Produit :</label>
+  <select id="produit" name="produit" required>
+    <option value="Crêpe">Crêpe</option>
+    <option value="Cookie">Cookie</option>
+    <option value="Muffin">Muffin</option>
+    <option value="Fondant au chocolat">Fondant au chocolat</option>
+  </select>
+
+  <label for="quantite">Quantité :</label>
+  <input type="number" id="quantite" name="quantite" min="1" value="1" required>
+
+  <label for="prix_unitaire">Prix unitaire (FCFA) :</label>
+  <input type="number" id="prix_unitaire" name="prix_unitaire" step="50" value="1000" required>
+
+  <button type="submit" class="btn">Commander</button>
 </form>
 </section>
 
@@ -67,6 +80,7 @@
 </body>
 
 </html>
+
 
 
 
